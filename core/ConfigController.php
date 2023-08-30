@@ -59,10 +59,6 @@ class ConfigController extends Config
             $this->urlMetodo = $urlController->slugMetodo(METODO);
             $this->urlParameter = "";
 
-            echo '<pre>$this->urlArray: ';
-            print_r($this->urlArray);
-            echo '</pre>';
-
             if (isset($this->urlArray[0])) {
                 $this->urlController = $urlController->slugController($this->urlArray[0]);
             }

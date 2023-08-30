@@ -1,15 +1,9 @@
 <?php
 
-namespace App\adms\Models;
+namespace Modules\Login\Models;
 
-if (!defined('AP5BL8KES2W0A2F3')) {
-    header('Location:/');
-    die('Erro: Página não encontrada');
-}
-
-class AdmsLogin
-{
-    /** @var array|null $data recebe as informacoes do formulario  */
+class Login
+{/** @var array|null $data recebe as informacoes do formulario  */
     private array|null $data;
     /** @var array|null $resultBd recebe os registos do bd  */
     private array|null $resultBd;

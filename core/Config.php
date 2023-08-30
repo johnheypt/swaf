@@ -2,9 +2,9 @@
 
 namespace Core;
 
-if(!defined('AP5BL8KES2W0A2F3')){
-    header("Location:/");
-    die("Erro: Página não encontrada");
+if (!defined('AP5BL8KES2W0A2F3')) {
+    header('Location:/');
+    die('Erro: Página não encontrada');
 }
 
 /**
@@ -21,14 +21,11 @@ abstract class Config
      * Página principal do projeto.
      * Credenciais de acesso ao banco de dados
      * E-mail do administrador.
-     * 
+     *
      * @return void
      */
     protected function configAdm(): void
     {
-        define('URL', 'http://localhost/adm/');
-        define('URLADM', 'http://localhost/adm/');
-
         define('CONTROLLER', 'Login');
         define('METODO', 'index');
         define('CONTROLLERERRO', 'Login');
@@ -37,8 +34,11 @@ abstract class Config
 
         //credenciais para o banco de dados
         if ($_SERVER['SERVER_NAME'] == 'localhost') {
-            define('URL', (isset($_SERVER['HTTPS']) ? "https://" : "http://") . $_SERVER['HTTP_HOST'] . preg_replace('@/+$@', '', trim(dirname($_SERVER['SCRIPT_NAME']), '\\')) . '/');
-            define('URLADM', URL . 'adm/');
+            define('URL', 'http://localhost/adm/');
+            define('URLADM', 'http://localhost/adm/');
+
+            //define('URL', (isset($_SERVER['HTTPS']) ? 'https://' : 'http://') . $_SERVER['HTTP_HOST'] . preg_replace('@/+$@', '', trim(dirname($_SERVER['SCRIPT_NAME']), '\\')) . '/');
+            //define('URLADM', URL . 'adm/');
 
             define('HOST', 'localhost');
             define('USER', 'root');

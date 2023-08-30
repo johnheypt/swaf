@@ -1,0 +1,8 @@
+Erro 01: AdmsConn - Erro de conexão com o Bando de dados
+Erro 02: ConfigView - Erro ao Carregar a View
+Erro 03: AdmsLogin - Erro de Usuário não encontrado
+Erro 04: AdmsLogin - Erro de Senha Errada
+Erro 05: CarregarPGAdm - a página digitada na url não foi encontrada na lista de publicas ou privadas
+Erro 06: CarregarPgAdm - O usuário não efectuou o AdmsLogin
+Erro 07: AdmsNewUser - Cadastrar usuário
+Erro 08: ConfigViewlogin - Erro ao Carregar a View

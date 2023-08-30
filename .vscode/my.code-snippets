@@ -1,0 +1,19 @@
+{
+  "Show variable content": {
+    "scope": "php",
+    "prefix": "pre",
+    "body": ["echo '<pre>$$1: ';", "print_r($$1);", "echo '</pre>';"],
+    "description": "Show variable content"
+  },
+  "Show variable content and Die": {
+    "scope": "php",
+    "prefix": "pred",
+    "body": [
+      "echo '<pre>$$1: ';",
+      "print_r($$1);",
+      "echo '</pre>';",
+      "die(__FILE__ . ' at line: ' . __LINE__);"
+    ],
+    "description": "Show variable content and Die"
+  }
+}

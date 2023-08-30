@@ -1,0 +1,18 @@
+{
+    "description": "SWAF - Sistema Web das Agências Funerárias",
+    "authors": [{
+        "name": "John Trindade",
+        "email": "jht_pt@icloud.com"
+    }],
+    "autoload": {
+        "psr-4": {
+            "Core\\": "core",
+            "App\\": "app",
+            "Adms\\": "app/adms",
+            "Modules\\": "./app/Modules/"
+        }
+    },
+    "require": {
+        "phpmailer/phpmailer": "^6.8"
+    }
+}
